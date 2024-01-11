@@ -13,8 +13,8 @@
   },
   "main": "api/index.ts",
   "ampt": {
-    "org": "",
-    "app": "react-vite"
+    "org": "maniak",
+    "app": "platform-building-alpha"
   },
   "files": [
     "!src/**/*"
