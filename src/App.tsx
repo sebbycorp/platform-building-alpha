@@ -1,33 +1,18 @@
-import { useHealthCheck } from "./hooks";
+import React from 'react';
+import Header from './components/Header';
+import MainSection from './components/MainSection';
+import Playground from './components/Playground';
+import Services from './components/Services';
+import Footer from './components/Footer';
 
 function App() {
-  const { status } = useHealthCheck();
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignContent: "center",
-        justifyContent: "center",
-      }}
-    >
-      <div
-        style={{
-          justifyContent: "center",
-          flexDirection: "row",
-          display: "flex",
-          marginBottom: 30,
-        }}
-      >
-        <img
-          style={{ marginRight: 30, alignSelf: "flex-start" }}
-          width="10%"
-          height="20%"
-          src="ampt.svg"
-        />
-        <h1>Hello from Ampt!</h1>
-      </div>
-      <h3>API Status: {status}</h3>
+    <div className="App">
+      <Header />
+      <MainSection />
+      <Playground />
+      <Services />
+      <Footer />
     </div>
   );
 }
